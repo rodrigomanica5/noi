@@ -15,7 +15,7 @@ function Form() {
       <div className='formContainer'>
         <h2>Escríbenos para producir tu próximo evento</h2>
         <form onSubmit={handlerSubmit} action="https://formsubmit.co/noiproductora@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="http://localhost:3000"/>
+        <input type="hidden" name="_next" value="https://noi.vercel.app"/>
         <input type="hidden" name="_subject" value="noi productora: Consulta"/>
         <input type="hidden" name="_template" value="table"></input>
           <div className='inputContainer'>
