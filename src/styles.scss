@@ -1,0 +1,318 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url("/public/assets/fonts/Helvetica-Font/Helvetica.ttf");
+}
+
+@font-face {
+    font-family: "Albra";
+    src: url("/public/assets/fonts/AlbraTRIAL/AlbraTRIAL-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5EEE3;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #111111;
+}
+
+.navbar {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    div {
+        width: 70%;
+        padding-left: 117px;
+
+        img {
+            width: 120px;
+            height: 105px;
+        }
+    }
+
+    nav {
+        width: 30%;
+        padding-right: 100px;
+
+        ul {
+            height: 100%;
+            list-style: none;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            li {
+                font-family: Helvetica;
+                font-size: 18px;
+                font-weight: 400;
+
+                a {
+                    text-decoration: none;
+                    color: #333333;
+                }
+            }
+        }
+    }
+}
+
+.headerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: auto;
+    background-image: url("/public/assets/images/blob.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .titleContainer {
+        width: 100%;
+        margin-top: 100px;
+        padding-bottom: 70px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            color: #000000;
+            position: absolute;
+            z-index: 2;
+            align-self: flex-end;
+            width: 40%;
+            font-family: Helvetica;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 36.8px;
+            text-align: center;
+            margin-right: 120px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+.aboutUsSection {
+    width: 100%;
+    background-image: url("/public/assets/images/blob2.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 80vh;
+    padding-top: 20vh;
+
+    .aboutUsContainer {
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        .aboutUsInfo {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            h4 {
+                width: 50%;
+                font-family: "Albra";
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 43.87px;
+                padding-right: 160px;
+                text-align: center;
+
+            }
+
+            p {
+                width: 50%;
+                font-family: Helvetica;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 25.3px;
+                padding-left: 150px;
+            }
+        }
+    }
+}
+
+.servicesSection {
+    width: 100%;
+    margin-top: 10vh;
+
+    .servicesContainer {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        h2 {
+            align-self: flex-start;
+        }
+
+        .servicesInfo {
+            width: 70%;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                margin-top: 65px;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    h5 {
+                        font-family: Helvetica;
+                        font-size: 31px;
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        width: 69%;
+                        font-family: Helvetica;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 18.4px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.formSection {
+    margin-top: 20vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+
+    .formContainer {
+        width: 100%;
+        height: auto;
+        background-color: #333333;
+        border-top-right-radius: 100px;
+        padding-bottom: 60px;
+
+        h2 {
+            width: 55%;
+            color: #FFFFFF;
+            margin-left: 10%;
+            margin-top: 100px;
+        }
+    }
+}
+
+form {
+    width: 70%;
+    margin-left: 5%;
+
+    .inputContainer {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-family: Helvetica;
+                font-size: 16px;
+                font-weight: 400;
+                color: #FFFFFF;
+                margin-top: 60px;
+                padding-left: 7px;
+            }
+
+            input {
+                width: 95%;
+                height: 50px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid #FFFFFF;
+                font-size: 18px;
+                color: #FFFFFF;
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+
+            .eventDescriptionArea {
+                width: 97.5%;
+            }
+        }
+    }
+
+    .formFooter {
+        width: 100%;
+        margin-left: 7.7%;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+
+        .submitButton {
+            all: unset;
+            border: 2px solid #FFFFFF;
+            border-radius: 5px;
+            padding: 1.8% 13%;
+            margin-top: 60px;
+            cursor: pointer;
+            font-family: Helvetica;
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+    
+        .submitButton:hover {
+            background-color: #FFFFFF;
+            color: #333333;
+            transition: all 0.5s;
+        }
+    }
+
+    .socialMedia {
+        width: 11%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            font-family: Helvetica;
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+    }
+}

@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("/public/assets/fonts/Helvetica-Font/Helvetica.ttf");
+}
+@font-face {
+  font-family: "Albra";
+  src: url("/public/assets/fonts/AlbraTRIAL/AlbraTRIAL-Regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5EEE3;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: Helvetica;
+  font-weight: 400;
+  color: #111111;
+}
+
+.navbar {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.navbar div {
+  width: 70%;
+  padding-left: 117px;
+}
+.navbar div img {
+  width: 120px;
+  height: 105px;
+}
+.navbar nav {
+  width: 30%;
+  padding-right: 100px;
+}
+.navbar nav ul {
+  height: 100%;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar nav ul li {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+}
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.headerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: auto;
+  background-image: url("/public/assets/images/blob.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.headerContainer .titleContainer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.headerContainer .titleContainer h2 {
+  color: #000000;
+  position: absolute;
+  z-index: 2;
+  align-self: flex-end;
+  width: 40%;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36.8px;
+  text-align: center;
+  margin-right: 120px;
+}
+.headerContainer .titleContainer img {
+  width: 100%;
+}
+
+.aboutUsSection {
+  width: 100%;
+  background-image: url("/public/assets/images/blob2.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 80vh;
+  padding-top: 20vh;
+}
+.aboutUsSection .aboutUsContainer {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUsSection .aboutUsContainer h2 {
+  margin-bottom: 25px;
+}
+.aboutUsSection .aboutUsContainer .aboutUsInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.aboutUsSection .aboutUsContainer .aboutUsInfo h4 {
+  width: 50%;
+  font-family: "Albra";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43.87px;
+  padding-right: 160px;
+  text-align: center;
+}
+.aboutUsSection .aboutUsContainer .aboutUsInfo p {
+  width: 50%;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25.3px;
+  padding-left: 150px;
+}
+
+.servicesSection {
+  width: 100%;
+  margin-top: 10vh;
+}
+.servicesSection .servicesContainer {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.servicesSection .servicesContainer h2 {
+  align-self: flex-start;
+}
+.servicesSection .servicesContainer .servicesInfo {
+  width: 70%;
+}
+.servicesSection .servicesContainer .servicesInfo div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 65px;
+}
+.servicesSection .servicesContainer .servicesInfo div div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.servicesSection .servicesContainer .servicesInfo div div h5 {
+  font-family: Helvetica;
+  font-size: 31px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.servicesSection .servicesContainer .servicesInfo div div p {
+  width: 69%;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.4px;
+  margin-top: 20px;
+}
+
+.formSection {
+  margin-top: 20vh;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+}
+.formSection .formContainer {
+  width: 100%;
+  height: auto;
+  background-color: #333333;
+  border-top-right-radius: 100px;
+  padding-bottom: 60px;
+}
+.formSection .formContainer h2 {
+  width: 55%;
+  color: #FFFFFF;
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+form {
+  width: 70%;
+  margin-left: 5%;
+}
+form .inputContainer {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+form .inputContainer div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form .inputContainer div label {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-top: 60px;
+  padding-left: 7px;
+}
+form .inputContainer div input {
+  width: 95%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+form .inputContainer div input::-webkit-outer-spin-button,
+form .inputContainer div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+form .inputContainer div .eventDescriptionArea {
+  width: 97.5%;
+}
+form .formFooter {
+  width: 100%;
+  margin-left: 7.7%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+}
+form .formFooter .submitButton {
+  all: unset;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 1.8% 13%;
+  margin-top: 60px;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+form .formFooter .submitButton:hover {
+  background-color: #FFFFFF;
+  color: #333333;
+  transition: all 0.5s;
+}
+form .socialMedia {
+  width: 11%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+form .socialMedia p {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=styles.css.map */
