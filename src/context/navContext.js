@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { createContext } from 'react'
 
 export const navContext = createContext()
@@ -18,7 +18,15 @@ function MyProvider({ children }) {
         })
     }
 
-    return <Provider value={{ nosotras, servicios, contacto, scrollToSection }}>{children}</Provider>
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        if (window.visualViewport.width < 500 ) {
+            setIsMobile(true)
+        }
+    }, [])
+
+    return <Provider value={{ nosotras, servicios, contacto, scrollToSection, isMobile }}>{children}</Provider>
 }
 
 export default MyProvider

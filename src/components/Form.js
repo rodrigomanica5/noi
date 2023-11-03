@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import { navContext } from '../context/navContext'
 
 const handlerSubmit = (e) => {
-  // e.preventDefault()
   console.log("sent");
 }
 

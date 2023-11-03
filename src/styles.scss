@@ -293,7 +293,7 @@ form {
             font-size: 16px;
             color: #FFFFFF;
         }
-    
+
         .submitButton:hover {
             background-color: #FFFFFF;
             color: #333333;
@@ -313,6 +313,139 @@ form {
             font-weight: 400;
             font-size: 16px;
             color: #FFFFFF;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .headerContainer {
+
+        .navbar {
+            justify-content: space-evenly;
+
+            nav {
+                width: 60%;
+                padding-right: 0;
+            }
+
+            div {
+                width: auto;
+                padding: 0;
+            }
+        }
+
+        .titleContainer {
+            h2 {
+                font-size: 16px;
+                width: 60%;
+                line-height: 18.4px;
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .aboutUsSection {
+        height: auto;
+        padding-top: 0;
+
+        .aboutUsContainer {
+            h2 {
+                font-size: 28px;
+            }
+
+            .aboutUsInfo {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                h4 {
+                    width: auto;
+                    padding-right: 0;
+                    font-size: 18px;
+                    line-height: 24.68px;
+                    text-align: left;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    width: auto;
+                    padding-left: 0;
+                    font-size: 16px;
+                    line-height: 18.4px;
+                }
+            }
+        }
+    }
+
+    .servicesSection {
+        .servicesContainer {
+            width: 90%;
+
+            h2 {
+                font-size: 28px;
+            }
+
+            .servicesInfo {
+                width: 100%;
+                justify-content: space-around;
+
+                div {
+                    margin-top: 20px;
+
+                    .dot {
+                        margin-right: 10%;
+                    }
+
+                    div {
+                        align-items: flex-start;
+
+                        h5 {
+                            font-size: 20px;
+                            padding-left: 15px;
+                        }
+
+                        .serviceDescription {
+                            width: auto;
+                            font-size: 16px;
+                            line-height: 18.4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .formSection {
+        margin-top: 10vh;
+        .formContainer {
+            border-top-right-radius: 50px;
+
+            h2 {
+                width: auto;
+                font-size: 28px;
+                margin: 40px 20px 0px 20px
+            }
+
+            form {
+                width: 100%;
+                margin: auto;
+
+                .inputContainer {
+                    width: 95%;
+                    display: block;
+                    margin: auto;
+
+                    div {
+                        label {
+                            margin-top: 30px;
+                        }
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 }

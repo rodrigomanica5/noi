@@ -19,7 +19,7 @@ const servicesArray = [
 
 function Services() {
 
-  const { servicios } = useContext(navContext)
+  const { servicios, isMobile } = useContext(navContext)
 
   return (
     <div ref={servicios} className='servicesSection'>
@@ -29,12 +29,12 @@ function Services() {
           {
             servicesArray.map((element, index) => {
               return <div key={index}>
-                <div>
-                  <img src='/assets/images/dot.svg' alt='dot' width={60} height={60} />
+                <div className='dot'>
+                  <img src='/assets/images/dot.svg' alt='dot' width={isMobile ? 32 : 60} height={isMobile ? 32 : 60} />
                 </div>
                 <div>
                   <h5 className='serviceTitle'>{element.title}</h5>
-                  <img src='/assets/images/Line.svg' alt='vector' />
+                  <img src='/assets/images/Line.svg' alt='vector' width={isMobile && 270}/>
                   <p className='serviceDescription'>{element.description}</p>
                 </div>
               </div>
